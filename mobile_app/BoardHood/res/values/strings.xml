@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">BoardHood</string>
+    
+    <string name="zero">0</string>
+    
+    <string name="dialog_filter_title">Filter Options</string>
+    <string name="order_by">Order by</string>
+    <string name="filter_popularity">Popularity</string>
+    <string name="filter_recent">Recent</string>
+    <string name="filter_distance">Distance</string>
+    <string name="filter_radius">Radius</string>
+    
+    <!-- Login Activity -->
+    <string name="close">Close</string>
+    <string name="login">Log In</string>
+    <string name="signup">Sign Up</string>
+    <string name="create">Create</string>
+    <string name="login_error">Login error</string>
+    <string name="login_error_wrong">Wrong username or password.</string>
+    <string name="login_error_unknown">Unknown error. Try again later.</string>
+    <string name="connection_error">Connection error</string>
+    <string name="connection_error_internet">There is no Internet connection.</string>
+    <string name="connection_error_host">The service host seems to be offline. Try again later.</string>
+    
+    <!-- Signup Activity -->
+    <string name="signup_error">Signup error</string>
+    <string name="signup_error_unknown">Unknown error. Try again later.</string>
+    
+    <!-- Conversation -->
+    <string name="saidOn">said on</string>
+    <string name="said">said</string>
+    <string name="ago">ago</string>
+    <string name="reply">reply</string>
+    <string name="replies">replies</string>
+    <string name="noreplies">no replies</string>
+    <string name="conversation_update_error">Unable to update conversations</string>
+    <string name="conversation_nothing_to_load">No conversations to load</string>
+    <string name="conversation_created">Conversation created successfully</string>
+    <string name="conversation_create_error">Error creating conversation</string>
+    <string name="to_see_conversation">To see conversations</string>
+    <string name="add_some_interests">add some Interests</string>
+    <string name="no_replies_be_the_first_to">No replies, be the first to</string>
+    <string name="reply_uppercase">Reply</string>
+    <string name="no_items">No items</string>
+    
+    <string name="replied_to_conversation">replied to a conversation on</string>
+    <string name="activity_update_error">Unable to update activities</string>
+    
+    <string name="list_update_error">Unable to update list</string>
+    <string name="no_conversations">No conversations</string>
+    <string name="no_interests">No interests</string>
+    <string name="no_followers">No followers</string>
+    <string name="no_activity">No activity</string>
+    
+    <!-- Interest -->
+    <string name="followers">followers</string>
+    <string name="conversations">conversations</string>
+    <string name="following">following</string>
+    <string name="follow">follow</string>
+    <string name="create_and_follow">create and follow</string>
+    <string name="interest_load_error">Unable to retrieve interest information</string>
+    <string name="interest_follow_error">Unable to follow/unfollow interest</string>
+    <string name="interest_create_error">Unable to create interest</string>
+    
+    <!-- New Conversation -->
+    <string name="choose">Choose the interest</string>
+    <string name="send">Send</string>
+    <string name="cancel">Cancel</string>
+    <string name="apply">Apply</string>
+    <string name="in_response_to">In response to</string>
+    
+    <!-- Profile -->
+    <string name="interests">interests</string>
+    <string name="profile_load_error">Unable to retrieve profile information</string>
+    <string name="label_username">Username</string>
+    <string name="label_email">Email</string>
+    <string name="label_password">Password</string>
+    <string name="label_avatar">Avatar</string>
+    <string name="label_cancel">Cancel</string>
+    <string name="label_save">Save</string>
+    <string name="label_edit">Edit</string>
+    <string name="label_logout">Log Out</string>
+    
+    <!-- Action Bar -->
+    <string name="actionbar_logo">Go back to home</string>
+    <string name="actionbar_filter">Conversations filter</string>
+    <string name="actionbar_refresh">Refresh content</string>
+    
+    <!-- Date and Time -->
+    <string name="year">year</string>
+    <string name="month">month</string>
+	<string name="day">day</string>
+	<string name="hour">hour</string>
+	<string name="min">minute</string>
+	<string name="sec">second</string>
+	<string name="now">now</string>
+	
+	<string name="short_year">y</string>
+    <string name="short_month">m</string>
+    <string name="short_day">d</string>
+    <string name="short_hour">h</string>
+    <string name="short_min">min</string>
+    <string name="short_sec">s</string>
+	
+	<!-- Distance -->
+	<string name="distance">km</string>
+	<string name="filter_distance_disabled">Disabled</string>
+	
+	<!-- Footer Bar -->
+	<string name="footerbar_feed">Feed</string>
+	<string name="footerbar_explore">Explore</string>
+	<string name="footerbar_activity">Activity</string>
+	<string name="footerbar_profile">Profile</string>
+	
+	<!-- LoaderListView -->
+	<string name="loaderlistview_update">Load more</string>
+	<string name="loaderlistview_updating">Loading&#8230;</string>
+	
+	<!-- Loading Bar -->
+	<string name="loadingbar_loading">Loading&#8230;</string>
+	
+	<string name="profile_update_success">Profile successfully updated</string>
+	
+	<!-- Validation Errors -->
+	<string name="error_symbol">&#187;</string>
+	<string name="unknown_error">Unknown error</string>
+	<string name="already_exists">already exists</string>
+	<string name="missing_field">is required</string>
+	<string name="empty_field">can\'t be empty</string>
+	<string name="invalid_value">has an invalid value</string>
+	<string name="invalid_file_type">has an invalid file type</string>
+	<string name="invalid_type">has an invalid type</string>
+	<string name="below_min_length">too short</string>
+	<string name="above_max_length">too long</string>
+	<string name="invalid_format">has an invalid format</string>
+	<string name="below_min_value">value is to small</string>
+	<string name="above_max_value">value is to big</string>
+	<string name="invalid_length">has an invalid length</string>
+	
+	<!-- Validation Fields -->
+	<string name="field_name">Username</string>
+	<string name="field_email">Email</string>
+	<string name="field_password">Password</string>
+	<string name="field_avatar">Avatar</string>
+</resources>

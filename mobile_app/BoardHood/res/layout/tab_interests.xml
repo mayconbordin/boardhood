@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+	android:layout_height="fill_parent">
+    
+    <com.boardhood.mobile.list.RoundedListView 
+        android:id="@+id/interest_list"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:divider="#dddddd"
+        android:dividerHeight="1px"
+        android:footerDividersEnabled="false"
+        android:fadingEdge="none"
+        android:cacheColorHint="@android:color/transparent"
+        android:listSelector="@drawable/transparent_selector"
+        android:paddingTop="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+         />
+    
+</LinearLayout>

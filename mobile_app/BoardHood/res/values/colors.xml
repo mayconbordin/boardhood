@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Basic -->
+    <color name="white">#ffffff</color>
+    <color name="orange">#fc5705</color>
+    <color name="gray">#c2c2c2</color>
+    <color name="dark_gray">#232323</color>
+    
+    <color name="simple_gray_normal">#adadad</color>
+    <color name="simple_gray_pressed">#b8b8b8</color>
+    <color name="simple_gray_disabled">#c2c2c2</color>
+    
+    <color name="button_background_start">#fc570a</color>
+    <color name="button_background_end">#f04e03</color>
+
+    <!-- Conversation List -->
+    <color name="conversationlist_item_background">#f2f2f2</color>
+    <color name="conversationlist_item_pressed_background">#fc5705</color>
+    <color name="conversationlist_item_text">#333333</color>
+    <color name="conversationlist_item_info">#5d5d5d</color>
+    <color name="conversationlist_avatar_background">#ffdddddd</color>
+    
+    <!-- Bottom Border -->
+    <color name="bottom_border_line">#c2c2c2</color>
+    <color name="bottom_border_background_pressed">#fc5705</color>
+    
+    <color name="listitem_divider">#dddddd</color>
+</resources>

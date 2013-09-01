@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content">
+        
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:background="@color/conversationlist_item_background"
+            android:padding="@dimen/conversationlist_item_padding"
+            android:gravity="center_vertical|center_horizontal"
+            android:text="@string/no_activity" />
+        
+</LinearLayout>

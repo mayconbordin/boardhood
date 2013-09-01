@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:id="@+id/screen"
+	style="@style/ImageTextButton">
+	
+	<ImageView
+		android:id="@+id/imagetext_button_image"
+		style="@style/ImageTextButtonImage" />
+	
+	<TextView
+		android:id="@+id/imagetext_button_text"
+		style="@style/ImageTextButtonText" />
+	
+</LinearLayout>

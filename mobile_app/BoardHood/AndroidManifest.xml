@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.boardhood.mobile"
+    android:versionCode="2"
+    android:versionName="1.0.1">
+
+    <!-- works with Android 2.1+ -->
+    <uses-sdk android:minSdkVersion="7" android:targetSdkVersion="7" />
+    
+    <!-- Permissions -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+  	<uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+  	<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+  	<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+  	<uses-permission android:name="android.permission.CAMERA" />
+  	
+  	<!-- Features -->
+	<uses-feature android:name="android.hardware.camera" />
+	<uses-feature android:name="android.hardware.camera.autofocus" />
+
+    <application
+        android:name="BoardHoodApplication"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/BoardHoodTheme">
+        
+        <!-- Broadcast Receivers -->
+
+        
+        <!-- Services -->
+        <!--
+        <service android:name=".service.LocationService" android:process=":remote" />
+        -->
+        
+        <!-- Activities -->
+        <activity
+            android:name=".activity.FeedActivity"
+            android:label="@string/app_name"
+            android:launchMode="singleTop">
+        </activity>
+        <activity 
+            android:name=".activity.LoginActivity"
+            android:label="@string/app_name"
+            android:theme="@android:style/Theme.NoTitleBar"
+            android:excludeFromRecents="true"
+            android:noHistory="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity 
+            android:name=".activity.SignupActivity"
+            android:label="@string/app_name"
+            android:theme="@android:style/Theme.NoTitleBar"
+            android:excludeFromRecents="true"
+            android:noHistory="true">
+        </activity>
+        <activity 
+            android:name=".activity.ConversationActivity"
+            android:label="@string/app_name">
+        </activity>
+        <activity 
+            android:name=".activity.ExploreActivity"
+            android:label="@string/app_name">
+        </activity>
+        <activity
+            android:name=".activity.NewConversationActivity"
+            android:label="@string/app_name"
+            android:theme="@android:style/Theme.Dialog"
+            android:exported="true"
+            android:permission="android.permission.INTERNET">
+            <intent-filter>
+                <action android:name="android.intent.action.SEND"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:mimeType="text/plain"/>
+            </intent-filter>
+        </activity>
+        <activity 
+            android:name=".activity.InterestActivity"
+            android:label="@string/app_name">
+        </activity>
+        <activity 
+            android:name=".activity.InterestChooserActivity"
+            android:label="@string/app_name">
+        </activity>
+        <activity 
+            android:name=".activity.ProfileActivity"
+            android:label="@string/app_name">
+        </activity>
+        <activity 
+            android:name=".activity.ProfileEditActivity"
+            android:label="@string/app_name">
+        </activity>
+        <activity 
+            android:name=".activity.ActivityActivity"
+            android:label="@string/app_name">
+        </activity>
+    </application>
+
+</manifest>

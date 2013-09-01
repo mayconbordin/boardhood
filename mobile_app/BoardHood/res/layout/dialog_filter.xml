@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent" 
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+    
+    <LinearLayout
+        android:layout_width="fill_parent" 
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginBottom="5dp"
+        android:padding="5dp"
+        android:orientation="vertical"
+        android:background="@drawable/conversation_item_background">
+        
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:gravity="center_vertical"
+            android:textColor="@color/dark_gray"
+            android:textSize="16dp"
+            android:textStyle="bold"
+            android:layout_marginRight="3dp"
+            android:text="@string/order_by" />
+        
+        <RadioGroup
+            android:id="@+id/filter_orderby"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checkedButton="@+id/filter_orderby_popularity">
+            
+            <RadioButton
+                android:id="@+id/filter_orderby_popularity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/dark_gray"
+                android:text="@string/filter_popularity" />
+
+            <RadioButton
+                android:id="@+id/filter_orderby_recent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/dark_gray"
+                android:text="@string/filter_recent" />
+            
+            <RadioButton 
+                android:id="@+id/filter_orderby_distance"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/dark_gray"
+                android:text="@string/filter_distance" />
+            
+        </RadioGroup>
+    
+    </LinearLayout>
+    
+    <LinearLayout
+        android:layout_width="fill_parent" 
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginBottom="5dp"
+        android:padding="5dp"
+        android:background="@drawable/conversation_item_background"
+        android:orientation="vertical">
+ 
+	    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:gravity="center_vertical"
+            android:textColor="@color/dark_gray"
+            android:textSize="16dp"
+            android:textStyle="bold"
+            android:layout_marginRight="3dp"
+            android:text="@string/filter_radius" />
+	    
+	    <TextView 
+	        android:id="@+id/filter_radius_label"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:gravity="center_horizontal"
+	        android:textColor="@color/dark_gray" />
+	
+	    <SeekBar
+	        android:id="@+id/filter_radius"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:max="100"
+	        android:progress="0" />
+    
+    </LinearLayout>
+    
+    <LinearLayout
+        android:layout_width="fill_parent" 
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="2dp"
+        android:layout_marginRight="2dp"
+        android:layout_marginBottom="5dp"
+        android:orientation="horizontal">
+	    
+        <Button
+            android:id="@+id/filter_cancel"
+            android:layout_width="0dp" 
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:text="@string/cancel" />
+        
+        <Button
+            android:id="@+id/filter_apply"
+            android:layout_width="0dp" 
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:text="@string/apply" />
+        
+    </LinearLayout>
+    
+</LinearLayout>

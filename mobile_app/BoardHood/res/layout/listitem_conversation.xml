@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ignition="http://github.com/ignition/schema"
+    style="@style/ConversationListItem">
+
+    <!-- Conversation Wrapper -->
+    <LinearLayout
+        style="@style/ConversationListItemInner">
+        
+        <!-- Conversation Body -->
+        <LinearLayout
+            style="@style/ConversationListItemBody">
+
+		    <com.boardhood.mobile.widget.ProfileImageView
+		        android:id="@+id/conversationitem_avatar"        
+		        style="@style/ConversationListItemAvatar" />
+		    
+		    <!-- Conversation Content -->
+		    <LinearLayout
+		        style="@style/ConversationListItemContent">
+		        
+		        <TextView
+		            android:id="@+id/conversationitem_title"
+		        	style="@style/ConversationListItemTitle" />
+
+	            <TextView
+		            android:id="@+id/conversationitem_message"
+		        	style="@style/ConversationListItemMessage" />
+	            
+		    </LinearLayout>
+		    <!-- Conversation Content -->
+		    
+	    </LinearLayout>
+	    <!-- Conversation Body -->
+	    
+	    <!-- Conversation Footer -->
+	    <LinearLayout
+	        style="@style/ConversationListItemFooter">
+		    
+	        <TextView
+	            android:id="@+id/conversationitem_info"
+	            style="@style/ConversationListItemInfo" />
+	        
+	        <TextView 
+	            android:id="@+id/conversationitem_repliescount" 
+	            style="@style/ConversationListItemRepliesCount" />
+               
+	    </LinearLayout>
+	    <!-- Conversation Footer -->
+	    
+	</LinearLayout>
+	<!-- Conversation Wrapper -->
+</LinearLayout>

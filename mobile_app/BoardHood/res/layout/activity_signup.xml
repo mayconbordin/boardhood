@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/login_background"
+    android:gravity="center|center_horizontal"
+    android:orientation="vertical">
+    
+    <ImageView
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:src="@drawable/actionbar_logo"
+        android:layout_marginBottom="15dp" />
+    
+	<EditText
+	    android:id="@+id/signup_username"
+	    android:layout_width="270dp"
+	    android:layout_height="30dp"
+	    android:background="@drawable/edittext_login_top_background"
+	    android:layout_gravity="center"
+	    android:inputType="textEmailAddress"
+	    android:hint="@string/label_username"
+	    android:textSize="14dp">
+	    <requestFocus />
+	</EditText>
+	
+	<EditText
+        android:id="@+id/signup_email"
+        android:layout_width="270dp"
+        android:layout_height="30dp"
+        android:background="@drawable/edittext_login_middle_background"
+        android:layout_gravity="center"
+        android:inputType="textEmailAddress"
+        android:hint="@string/label_email"
+        android:textSize="14dp" />
+
+	<EditText
+	    android:id="@+id/signup_password"
+	    android:layout_width="270dp"
+	    android:layout_height="30dp"
+	    android:background="@drawable/edittext_login_bottom_background"
+	    android:layout_gravity="center"
+	    android:inputType="textPassword"
+	    android:hint="@string/label_password"
+	    android:textSize="14dp" />
+
+	<com.boardhood.mobile.widget.LoadingButton
+	    android:id="@+id/signup_create"
+	    android:layout_width="270dp"
+	    android:layout_height="38dp"
+	    android:layout_marginTop="10dp" />
+	
+	<com.boardhood.mobile.widget.Button
+        android:id="@+id/signup_cancel"
+        android:layout_width="270dp"
+        android:layout_height="38dp"
+        android:layout_marginTop="5dp"
+        android:text="@string/label_cancel" />
+
+</LinearLayout>

@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">BoardHood</string>
+    
+    <string name="zero">0</string>
+    
+    <string name="dialog_filter_title">Opções de Filtro</string>
+    <string name="order_by">Ordenar por</string>
+    <string name="filter_popularity">Popularidade</string>
+    <string name="filter_recent">Recentes</string>
+    <string name="filter_distance">Distância</string>
+    <string name="filter_radius">Raio</string>
+    
+    <!-- Login Activity -->
+    <string name="close">Fechar</string>
+    <string name="login">Entrar</string>
+    <string name="signup">Registrar</string>
+    <string name="create">Criar</string>
+    <string name="login_error">Erro de login</string>
+    <string name="login_error_wrong">Senha ou usuário errados.</string>
+    <string name="login_error_unknown">Erro desconhecido. Tente mais tarde.</string>
+    <string name="connection_error">Erro de conexão</string>
+    <string name="connection_error_internet">Não há conexão com a Internet.</string>
+    <string name="connection_error_host">O servidor parace estar offline. Tente mais tarde.</string>
+    
+    <!-- Signup Activity -->
+    <string name="signup_error">Erro de registro</string>
+    <string name="signup_error_unknown">Error desconhecido. Tente mais tarde.</string>
+    
+    <!-- Conversation -->
+    <string name="saidOn">disse em</string>
+    <string name="said">disse</string>
+    <string name="ago">atrás</string>
+    <string name="reply">resposta</string>
+    <string name="replies">respostas</string>
+    <string name="noreplies">sem respostas</string>
+    <string name="conversation_update_error">Não foi possível atualizar as conversas</string>
+    <string name="conversation_nothing_to_load">Sem conversas para carregar</string>
+    <string name="conversation_created">Conversa criada com sucesso</string>
+    <string name="conversation_create_error">Erro ao criar a conversa</string>
+    <string name="to_see_conversation">Para ver conversas</string>
+    <string name="add_some_interests">adicione alguns Interesses</string>
+    <string name="no_replies_be_the_first_to">Sem respostas, seja o primeiro a</string>
+    <string name="reply_uppercase">Responder</string>
+    <string name="no_items">Sem itens</string>
+    
+    <string name="replied_to_conversation">respondeu a uma conversa em</string>
+    <string name="activity_update_error">Não foi possível atualizar as atividades</string>
+    
+    <string name="list_update_error">Não foi possível atualizar a lista</string>
+    <string name="no_conversations">Sem conversas</string>
+    <string name="no_interests">Sem interesses</string>
+    <string name="no_followers">Sem seguidores</string>
+    <string name="no_activity">Sem atividade</string>
+    
+    <!-- Interest -->
+    <string name="followers">seguidores</string>
+    <string name="conversations">conversas</string>
+    <string name="following">seguindo</string>
+    <string name="follow">seguir</string>
+    <string name="create_and_follow">criar e seguir</string>
+    <string name="interest_load_error">Impossível obter informações do interesse</string>
+    <string name="interest_follow_error">Impossível seguir/para de seguir interesse</string>
+    <string name="interest_create_error">Impossível criar interesse</string>
+    
+    <!-- New Conversation -->
+    <string name="choose">Escolha o interesse</string>
+    <string name="send">Enviar</string>
+    <string name="cancel">Cancelar</string>
+    <string name="apply">Applicar</string>
+    <string name="in_response_to">Em resposta a</string>
+    
+    <!-- Profile -->
+    <string name="interests">interesses</string>
+    <string name="profile_load_error">Impossível recuperar informações do perfil</string>
+    <string name="label_username">Usuário</string>
+    <string name="label_email">Email</string>
+    <string name="label_password">Senha</string>
+    <string name="label_avatar">Avatar</string>
+    <string name="label_cancel">Cancelar</string>
+    <string name="label_save">Salvar</string>
+    <string name="label_edit">Editar</string>
+    <string name="label_logout">Sair</string>
+    
+    <!-- Action Bar -->
+    <string name="actionbar_logo">Voltar para tela principal</string>
+    <string name="actionbar_filter">Filtro de conversas</string>
+    <string name="actionbar_refresh">Atualizar conteúdo</string>
+    
+    <!-- Date and Time -->
+    <string name="year">ano</string>
+    <string name="month">mês</string>
+	<string name="day">dia</string>
+	<string name="hour">hora</string>
+	<string name="min">minuto</string>
+	<string name="sec">segundo</string>
+	<string name="now">agora</string>
+	
+	<string name="short_year">a</string>
+    <string name="short_month">m</string>
+    <string name="short_day">d</string>
+    <string name="short_hour">h</string>
+    <string name="short_min">min</string>
+    <string name="short_sec">s</string>
+	
+	<!-- Distance -->
+	<string name="distance">km</string>
+	<string name="filter_distance_disabled">Desabilitado</string>
+	
+	<!-- Footer Bar -->
+	<string name="footerbar_feed">Feed</string>
+	<string name="footerbar_explore">Explorar</string>
+	<string name="footerbar_activity">Atividade</string>
+	<string name="footerbar_profile">Perfil</string>
+	
+	<!-- LoaderListView -->
+	<string name="loaderlistview_update">Carregar mais</string>
+	<string name="loaderlistview_updating">Carregando&#8230;</string>
+	
+	<!-- Loading Bar -->
+	<string name="loadingbar_loading">Carregando&#8230;</string>
+	
+	<string name="profile_update_success">Perfil atualizado com sucesso</string>
+	
+	<!-- Validation Errors -->
+	<string name="error_symbol">&#187;</string>
+	<string name="unknown_error">Erro desconhecido</string>
+	<string name="already_exists">já existe</string>
+	<string name="missing_field">é obrigatório</string>
+	<string name="empty_field">não pode ser vazio</string>
+	<string name="invalid_value">possui um valor inválido</string>
+	<string name="invalid_file_type">possui um formato de arquivo inválido</string>
+	<string name="invalid_type">possui um tipo inválido</string>
+	<string name="below_min_length">muito curto</string>
+	<string name="above_max_length">muito longo</string>
+	<string name="invalid_format">possui um formato inválido</string>
+	<string name="below_min_value">tem um valor muito pequeno</string>
+	<string name="above_max_value">tem um valor muito grande</string>
+	<string name="invalid_length">tem um tamanho inválido</string>
+	
+	<!-- Validation Fields -->
+	<string name="field_name">Usuário</string>
+	<string name="field_email">Email</string>
+	<string name="field_password">Senha</string>
+	<string name="field_avatar">Avatar</string>
+</resources>

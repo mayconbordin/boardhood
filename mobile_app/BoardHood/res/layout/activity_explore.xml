@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:background="@drawable/main_background">
+    
+    <com.boardhood.mobile.widget.ActionBar
+        android:id="@+id/actionbar"
+        android:layout_width="fill_parent"
+        android:layout_height="45dp" />
+    
+    <LinearLayout 
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp">
+        
+        <EditText
+            android:id="@+id/interest_filter"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/search_icon"
+            android:inputType="text" />
+        
+        <com.boardhood.mobile.list.RoundedListView 
+            android:id="@+id/android:list"
+            style="@style/InterestList" />
+        
+    </LinearLayout>
+    
+    <com.boardhood.mobile.widget.FooterBar 
+        android:id="@+id/footerbar"
+        style="@style/FooterBar" />
+
+</LinearLayout>

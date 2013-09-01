@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:background="@drawable/main_background">
+    
+    <com.boardhood.mobile.widget.ActionBar
+        android:id="@+id/actionbar"
+    	android:layout_width="fill_parent"
+    	android:layout_height="45dp" />
+    
+    <LinearLayout
+        android:background="@drawable/conversation_item_background"
+        android:layout_width="fill_parent"
+    	android:layout_height="wrap_content"
+    	android:layout_margin="5dp"
+    	android:padding="5dp"
+    	android:orientation="vertical">
+    	
+        <LinearLayout
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:orientation="horizontal"
+	        android:layout_marginBottom="5dp">
+	        
+	        <TextView 
+	            android:layout_width="80dp"
+	            android:layout_height="wrap_content"
+	            android:textColor="@color/dark_gray"
+	            android:textStyle="bold"
+	            android:text="@string/label_username"/>
+	        
+	        <EditText 
+	            android:id="@+id/profile_username"
+	            android:layout_width="0dp"
+	            android:layout_height="30dp"
+	            android:layout_weight="1"
+	            android:layout_marginLeft="5dp"
+	            android:paddingLeft="5dp"
+	            android:paddingRight="5dp"
+	            android:background="@drawable/edittext_background"
+	            android:inputType="text"
+	            android:imeOptions="actionNext"/>
+	    </LinearLayout>
+	    
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="5dp">
+            
+            <TextView 
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:textColor="@color/dark_gray"
+                android:textStyle="bold"
+                android:text="@string/label_email"/>
+            
+            <EditText 
+                android:id="@+id/profile_email"
+                android:layout_width="0dp"
+                android:layout_height="30dp"
+                android:layout_weight="1"
+                android:layout_marginLeft="5dp"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:background="@drawable/edittext_background"
+                android:inputType="textEmailAddress"
+                android:imeOptions="actionNext"/>
+        </LinearLayout>
+        
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="5dp">
+            
+            <TextView 
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:textColor="@color/dark_gray"
+                android:textStyle="bold"
+                android:text="@string/label_password"/>
+            
+            <EditText 
+                android:id="@+id/profile_password"
+                android:layout_width="0dp"
+                android:layout_height="30dp"
+                android:layout_weight="1"
+                android:layout_marginLeft="5dp"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:background="@drawable/edittext_background"
+                android:inputType="textPassword"
+                android:imeOptions="actionDone"/>
+        </LinearLayout>
+        
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="5dp">
+            
+            <TextView 
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:textColor="@color/dark_gray"
+                android:textStyle="bold"
+                android:layout_gravity="center_vertical"
+                android:text="@string/label_avatar"/>
+
+            <com.boardhood.mobile.widget.ProfileImageView
+                android:id="@+id/profile_avatar"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_marginLeft="5dp" />
+               
+            <ImageView
+                android:id="@+id/profile_local_avatar"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_marginLeft="5dp"
+                android:visibility="gone" />
+
+        </LinearLayout>
+        
+        <TextView 
+            android:id="@+id/profile_errors"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/background_dark_rounded"
+            android:padding="5dp"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/dark_gray"
+            android:textStyle="bold"
+            android:textSize="10dp"
+            android:layout_gravity="center_vertical"
+            android:singleLine="false"
+            android:visibility="gone" />
+        
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:layout_marginTop="15dp">
+            
+            <com.boardhood.mobile.widget.Button 
+                android:id="@+id/profile_cancel"
+                android:layout_width="80dp"
+                android:layout_height="35dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentBottom="true"
+                android:text="@string/label_cancel" />
+            
+            <com.boardhood.mobile.widget.LoadingButton
+                android:id="@+id/profile_save"
+		        android:layout_width="80dp"
+		        android:layout_height="35dp"
+		        android:layout_alignParentRight="true"
+                android:layout_alignParentBottom="true"
+                android:text="@string/label_save" />
+            
+        </RelativeLayout>
+        
+    </LinearLayout>
+	
+</LinearLayout>

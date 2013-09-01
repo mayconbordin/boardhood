@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:background="@drawable/main_background">
+    
+    <com.boardhood.mobile.widget.ActionBar
+        android:id="@+id/actionbar"
+        android:layout_width="fill_parent"
+        android:layout_height="45dp" />
+    
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical">
+    
+	    <LinearLayout
+	        android:background="@drawable/conversation_item_background"
+	        android:layout_width="fill_parent"
+	    	android:layout_height="wrap_content"
+	    	android:layout_margin="5dp"
+	    	android:paddingTop="5dp"
+	    	android:orientation="vertical">
+	    	
+	        <RelativeLayout
+	            android:id="@+id/interest_header"
+	            android:layout_width="fill_parent"
+	            android:layout_height="25dp"
+	            android:paddingTop="0dp"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:paddingBottom="5dp"
+	            android:background="@drawable/bottom_border_noradius_background">
+			
+			    <TextView
+			        android:id="@+id/interest_name"
+			        android:layout_width="wrap_content" 
+			        android:layout_height="wrap_content" 
+			        android:layout_alignParentLeft="true"
+			        android:textColor="@drawable/conversation_item_text_selector"
+			        android:textStyle="bold"
+			        android:layout_marginTop="0.5dp" />
+	
+			    <com.boardhood.mobile.widget.FollowButton
+			        android:id="@+id/interest_follow"
+	                android:layout_width="80dp"
+			        android:layout_height="fill_parent"
+			        android:padding="2dp"
+			        android:layout_alignParentRight="true" />
+	            
+	        </RelativeLayout>
+	        
+	        <LinearLayout
+			    android:layout_width="fill_parent" 
+			    android:layout_height="45dp"
+			    android:weightSum="1.0">
+			    
+	            <RelativeLayout 
+	                android:id="@+id/followers_tab_selector"
+	                android:layout_width="fill_parent" 
+		            android:layout_height="fill_parent"
+		            android:layout_weight=".50"
+		            android:gravity="center"
+		            android:clickable="true">
+	                
+	                <TextView
+			            android:id="@+id/interest_followers_count"
+			            android:text="@string/zero"
+			            android:textSize="16dp"
+			            android:textStyle="bold"
+			            android:textColor="@color/dark_gray"
+			            android:layout_width="fill_parent" 
+			            android:layout_height="wrap_content"
+			            android:gravity="center"
+			            android:layout_marginTop="6dp"
+			            android:layout_alignParentTop="true" />
+	                
+	                <TextView
+	                    android:id="@+id/interest_followers_label"
+			            android:text="@string/followers"
+			            android:textSize="9dp"
+			            android:textStyle="bold"
+			            android:textColor="@color/dark_gray"
+			            android:layout_width="fill_parent" 
+			            android:layout_height="wrap_content"
+			            android:gravity="center"
+			            android:layout_marginBottom="6dp"
+			            android:layout_alignParentBottom="true" />
+	                
+	            </RelativeLayout>
+	            
+	            <View
+	                android:layout_width="1px"
+	                android:layout_height="fill_parent"
+	                android:background="@color/bottom_border_line" />
+	            
+	            <RelativeLayout 
+	                android:id="@+id/conversations_tab_selector"
+	                android:layout_width="fill_parent" 
+		            android:layout_height="fill_parent"
+		            android:layout_weight=".50"
+		            android:clickable="true"
+		            android:gravity="center">
+	                
+	                <TextView
+			            android:id="@+id/interest_conversations_count"
+			            android:text="@string/zero"
+			            android:textSize="16dp"
+			            android:textStyle="bold"
+			            android:textColor="@color/dark_gray"
+			            android:layout_width="fill_parent" 
+			            android:layout_height="wrap_content"
+			            android:gravity="center"
+			            android:layout_marginTop="6dp"
+			            android:layout_alignParentTop="true" />
+	                
+	                <TextView
+	                    android:id="@+id/interest_conversations_label"
+			            android:text="@string/conversations"
+			            android:textSize="9dp"
+			            android:textStyle="bold"
+			            android:textColor="@color/dark_gray"
+			            android:layout_width="fill_parent" 
+			            android:layout_height="wrap_content"
+			            android:gravity="center"
+			            android:layout_marginBottom="6dp"
+			            android:layout_alignParentBottom="true" />
+	                
+	            </RelativeLayout>
+	
+	        </LinearLayout>
+	        
+	    </LinearLayout>
+	    
+	    <LinearLayout
+	        android:id="@+id/tab_container"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content" />
+    
+    </LinearLayout>
+
+    <com.boardhood.mobile.widget.FooterBar 
+        android:id="@+id/footerbar"
+        style="@style/FooterBar" />
+
+</LinearLayout>

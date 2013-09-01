@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+	<!-- Conversation List -->
+	<style name="ConversationList">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">0dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:divider">@android:color/transparent</item>
+        
+        <!-- remove top and bottom black shadows on scrolling -->
+        <item name="android:fadingEdge">none</item>
+        
+        <!-- remove the black background on scrolling from items -->
+        <item name="android:cacheColorHint">@android:color/transparent</item>
+        
+        <item name="android:listSelector">@drawable/transparent_selector</item>
+        
+        <item name="android:layout_marginLeft">5dp</item>
+        <item name="android:layout_marginRight">5dp</item>
+    </style>
+    <style name="ConversationListItem">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:paddingTop">@dimen/conversationlist_item_padding</item>
+    </style>
+    <style name="ConversationListItemInner">
+        <item name="android:orientation">vertical</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@drawable/conversation_item_selector</item>
+        <item name="android:padding">@dimen/conversationlist_item_padding</item>
+    </style>
+    <style name="ConversationListItemBody">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="ConversationListItemAvatar">
+        <item name="android:layout_width">@dimen/conversationlist_item_avatar_width</item>
+        <item name="android:layout_height">@dimen/conversationlist_item_avatar_height</item>
+        <item name="android:layout_marginRight">@dimen/conversationlist_item_avatar_marginright</item>
+    	<item name="android:layout_alignParentTop">true</item>
+    	<item name="android:background">@color/conversationlist_item_background</item>
+    </style>
+    <style name="ConversationListItemContent">
+	    <item name="android:orientation">vertical</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="ConversationListItemTitle">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:textSize">@dimen/conversationlist_item_fontsize</item>
+        <item name="android:textColor">@drawable/conversation_item_text_selector</item>
+    </style>
+    <style name="ConversationListItemMessage">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:textSize">@dimen/conversationlist_item_fontsize</item>
+        <item name="android:textColor">@drawable/conversation_item_text_selector</item>
+    </style>
+    
+    <style name="ConversationListItemFooter">
+        <item name="android:orientation">horizontal</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">@dimen/conversationlist_item_footer_leftmargin</item>
+    </style>
+    <style name="ConversationListItemInfo">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">fill_parent</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:gravity">left</item>
+        <item name="android:textSize">@dimen/conversationlist_item_info_fontsize</item>
+        <item name="android:textColor">@drawable/conversation_item_info_selector</item>
+    </style>
+    <style name="ConversationListItemRepliesCount">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">fill_parent</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:gravity">right</item>
+        <item name="android:textSize">@dimen/conversationlist_item_info_fontsize</item>
+        <item name="android:textColor">@drawable/conversation_item_info_selector</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+    
+    <!-- Interest List -->
+	<style name="InterestList">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:divider">@color/listitem_divider</item>
+        <item name="android:dividerHeight">1px</item>
+        <item name="android:footerDividersEnabled">false</item>
+        
+        <!-- remove top and bottom black shadows on scrolling -->
+        <item name="android:fadingEdge">none</item>
+        
+        <!-- remove the black background on scrolling from items -->
+        <item name="android:cacheColorHint">@android:color/transparent</item>
+        
+        <item name="android:listSelector">@drawable/transparent_selector</item>
+    </style>
+    
+    <!-- ImageTextButton -->
+    <style name="ImageTextButton">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:gravity">center_horizontal</item>
+    </style>
+    <style name="ImageTextButtonImage">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">@dimen/imagetext_button_image_height</item>
+        <item name="android:paddingBottom">@dimen/imagetext_button_image_paddingbottom</item>
+    </style>
+    <style name="ImageTextButtonText">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">@dimen/imagetext_button_text_size</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:gravity">center_horizontal</item>
+    </style>
+    
+    <!-- Footer Bar -->
+    <style name="FooterBar">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">@dimen/footerbar_heigth</item>
+        <item name="android:gravity">bottom</item>
+    </style>
+    <style name="FooterBarButton">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">fill_parent</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:padding">@dimen/footerbar_button_padding</item>
+        <item name="android:scaleType">fitCenter</item>
+        <item name="android:gravity">center_horizontal|bottom</item>
+        <item name="android:background">@drawable/footerbar_button</item>
+    </style>
+    
+    <!-- Loading Bar -->
+    <style name="LoadingBar">
+    	<item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:background">@drawable/conversation_item_background</item>
+        <item name="android:layout_marginLeft">5dp</item>
+        <item name="android:layout_marginRight">5dp</item>
+        <item name="android:gravity">center</item>
+    </style>
+    <style name="LoadingBarInterest">
+    	<item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:gravity">center</item>
+    </style>
+    <style name="LoadingBarWrapper">
+    	<item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:paddingTop">5dp</item>
+        <item name="android:paddingBottom">5dp</item>
+    </style>
+    <style name="LoadingBarProgressBar" parent="@android:style/Widget.ProgressBar.Small.Inverse">
+    	<item name="android:layout_width">10dp</item>
+        <item name="android:layout_height">10dp</item>
+        <item name="android:layout_marginRight">5dp</item>
+        <item name="android:layout_marginTop">2dp</item>
+    </style>
+    <style name="LoadingBarText">
+    	<item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">10dp</item>
+        <item name="android:textColor">@color/dark_gray</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:text">@string/loadingbar_loading</item>
+    </style>
+    
+    <!-- New Conversation Dialog -->
+    <style name="NewConversationDialog" parent="@android:style/Theme.Dialog">
+		<item name="android:background">@color/conversationlist_item_background</item>
+	</style>
+	
+    <!-- Activity List -->
+    <style name="ActivityList">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">0dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:divider">@color/bottom_border_line</item>
+        <item name="android:dividerHeight">1px</item>
+        <item name="android:footerDividersEnabled">false</item>
+        
+        <!-- remove top and bottom black shadows on scrolling -->
+        <item name="android:fadingEdge">none</item>
+        
+        <!-- remove the black background on scrolling from items -->
+        <item name="android:cacheColorHint">@android:color/transparent</item>
+        
+        <item name="android:listSelector">@drawable/transparent_selector</item>
+    </style>
+</resources>

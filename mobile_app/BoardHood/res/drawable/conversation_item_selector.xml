@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">   
+  <!-- Focused --> 
+  <item 
+    android:state_focused="true" 
+    android:state_pressed="false" 
+    android:drawable="@android:color/transparent" />
+  
+  <!-- Focused and Pressed --> 
+  <item 
+    android:state_focused="true" 
+    android:state_pressed="true" 
+    android:drawable="@android:color/transparent" />
+  
+  <!-- Pressed -->
+  <item 
+    android:state_pressed="true" 
+    android:drawable="@drawable/conversation_item_pressed_background" />
+  
+  <!-- Default -->
+  <item 
+    android:drawable="@drawable/conversation_item_background" />
+
+</selector>

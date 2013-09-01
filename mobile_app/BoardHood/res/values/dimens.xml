@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <!-- Conversation List -->
+  <dimen name="conversationlist_item_padding">5dp</dimen>
+  <dimen name="conversationlist_item_radius">5dp</dimen>
+  
+  <dimen name="conversationlist_item_avatar_width">45dp</dimen>
+  <dimen name="conversationlist_item_avatar_height">45dp</dimen>
+  <dimen name="conversationlist_item_avatar_marginright">5dp</dimen>
+  
+  <!-- avatar_width + avatar_margin_right -->
+  <dimen name="conversationlist_item_footer_leftmargin">50dp</dimen>
+  
+  <dimen name="conversationlist_item_fontsize">10dp</dimen>
+  <dimen name="conversationlist_item_info_fontsize">8dp</dimen>
+  
+  <!-- ImageTextButton -->
+  <dimen name="imagetext_button_image_height">30dp</dimen>
+  <dimen name="imagetext_button_image_paddingbottom">2dp</dimen>
+  <dimen name="imagetext_button_text_size">8dp</dimen>
+  
+  <!-- Footer Bar -->
+  <dimen name="footerbar_heigth">55dp</dimen>
+  <dimen name="footerbar_button_padding">5dp</dimen>
+</resources>

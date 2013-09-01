@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+  <string name="ign_progress_dialog_title">Carregando&#8230;</string>
+  <string name="ign_progress_dialog_message">Espere um momento, por favor.</string>
+  
+  <string name="ign_error_report_email_subject">Novo relatório de erro: %s</string>
+  <string name="ign_error_report_send_button">Enviar Email</string>
+  <string name="ign_progress_dialog_msg">Espere um momento, por favor.</string>
+
+</resources>

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_marginBottom="5dp">
+    
+    <com.boardhood.mobile.widget.LoadingBar
+        android:id="@+id/listview_loading_bar_bottom"
+        android:visibility="gone"
+        style="@style/LoadingBarInterest"
+        android:layout_marginTop="5dp" />
+    
+	<LinearLayout
+	    android:id="@+id/listview_rounded_bottom"
+	    android:layout_width="fill_parent"
+	    android:layout_height="8dp"
+	    android:background="@drawable/rounded_bottom_normal"
+	    android:visibility="gone">
+	    
+	    <TextView 
+	        android:layout_width="wrap_content"
+	        android:layout_height="8dp"/>
+	    
+	</LinearLayout>
+	
+	<LinearLayout
+        android:id="@+id/listview_noitems"
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:clickable="false"
+        android:visibility="gone">
+            
+            <TextView
+                android:id="@+id/listview_noitems_text"
+                android:layout_width="fill_parent"
+                android:layout_height="38dp"
+                android:background="@drawable/conversation_item_selector"
+                android:padding="@dimen/conversationlist_item_padding"
+                android:gravity="center"
+                android:text="@string/no_items" />
+            
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/listview_loadmore"
+        android:layout_width="fill_parent"
+        android:layout_height="45dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/button_simple_gray"
+        android:textColor="@color/white"
+        android:visibility="gone"
+        android:text="@string/loaderlistview_update" />
+    
+    <TextView 
+        android:layout_width="fill_parent"
+        android:layout_height="5dp" />
+
+</LinearLayout>

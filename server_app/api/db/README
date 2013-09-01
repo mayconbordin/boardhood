@@ -1,0 +1,48 @@
+-- Faster, but less precise:
+
+SELECT ST_Distance_Sphere(
+    GeomFromText('POINT(-79.5505 44.397854)', 4326),
+    GeomFromText('POINT(-79.688644 44.37887)', 4326)
+    );
+    
+-- Slower, but more precise:
+
+select distance_spheroid(
+     GeomFromText('POINT(-79.5505 44.397854)', 4326),
+     GeomFromText('POINT(-79.688644 44.37887)', 4326),
+     'SPHEROID["WGS_1984",6378137,298.257223563]');
+     
+     
+-- Return distance in meters
+-- http://trac.osgeo.org/postgis/wiki/UsersWikiNewbieDistanceMeasurement
+
+-- update fields
+UPDATE conversations SET location = GeomFromText('POINT(' || latlng[1] || ' ' || latlng[0] || ')', 4326);
+
+-- get distance between points
+SELECT ST_Distance_Sphere(a.location, b.location)
+FROM conversations a, conversations b
+WHERE a.id = 1 AND b.id = 2;
+
+-- within select
+SELECT *
+  FROM atm_finder
+  WHERE ST_Distance(ST_Transform(ST_GeomFromText('POINT([Lon] [Lat])',4326),26986),ST_Transform(location,26986)) <= 1000
+  
+  
+  
+-- examples
+SELECT id
+FROM conversations
+WHERE ST_DWithin(
+	ST_Transform(ST_GeomFromText('POINT(-54.4593889 -27.86403)',4326),26986),
+	ST_Transform(location, 26986),
+	2000
+)
+
+SELECT id
+FROM conversations
+WHERE ST_Distance_Sphere(
+	ST_GeomFromText('POINT(-54.4593889 -27.86403)',4326),
+	location
+) < 2000

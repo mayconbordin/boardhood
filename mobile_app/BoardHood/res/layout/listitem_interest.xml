@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:id="@+id/interest_header"
+    android:layout_width="fill_parent"
+    android:layout_height="38dp"
+    android:padding="5dp"
+    android:background="@drawable/interest_background">
+
+    <TextView
+        android:id="@+id/interest_name"
+        android:layout_width="wrap_content" 
+        android:layout_height="wrap_content" 
+        android:layout_alignParentLeft="true" 
+       	android:layout_centerVertical="true"
+        android:textColor="@drawable/conversation_item_text_selector"
+        android:textStyle="bold" />
+
+    <com.boardhood.mobile.widget.FollowButton
+        android:id="@+id/interest_follow"
+        android:layout_width="80dp"
+        android:layout_height="fill_parent"
+        android:padding="2dp"
+        android:textSize="10dp"
+        android:textStyle="bold"
+        android:layout_alignParentRight="true"
+        android:text="@string/follow" />
+         
+</RelativeLayout>
