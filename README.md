@@ -18,3 +18,7 @@ Basically, it is a mobile application for people to discuss about topics of inte
 * The installation and configuration of all software stack above was done with a Fabric script.
 * The Python application was packaged with Distribute and deployed with Fabric.
 * The client application was developed for Android.
+
+## Client Screenshots ##
+
+<img src="https://raw.github.com/mayconbordin/boardhood/master/resources/screenshots/Screenshot_2012-07-25-11-19-57.png" alt="Screenshot #1" style="width: 200px;"/>
