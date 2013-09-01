@@ -127,8 +127,8 @@ $ chmod +x /var/www/myproject/.git/hooks/post-commit
 6. Generate public key, upload to server and add to authorized keys
 -------------------------------------------------------------------
 $ ssh-keygen
-$ scp -i boardhoodkey.pem /home/maycon/.ssh/id_rsa.pub ubuntu@23.23.160.29:~/.ssh/id_rsa.pub
-ubuntu@23.23.160.29:$ cat ~/.ssh/id_rsa.pub >> ~/.ssh/authorized_keys
+$ scp -i boardhoodkey.pem /home/maycon/.ssh/id_rsa.pub ubuntu@127.0.0.1:~/.ssh/id_rsa.pub
+ubuntu@127.0.0.1:$ cat ~/.ssh/id_rsa.pub >> ~/.ssh/authorized_keys
 
 
 7. Clone the repo locally and push changes

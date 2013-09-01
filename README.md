@@ -21,6 +21,4 @@ Basically, it is a mobile application for people to discuss about topics of inte
 
 ## Client Screenshots ##
 
-<img src="https://raw.github.com/mayconbordin/boardhood/master/resources/screenshots/Screenshot_2012-07-25-11-19-57.png" alt="Screenshot #1" style="width: 50%;"/>
-
-<img src="https://raw.github.com/mayconbordin/boardhood/master/resources/screenshots/Screenshot_2012-07-25-11-20-13.png" alt="Screenshot #2" style="width: 50%;"/>
+<img src="https://raw.github.com/mayconbordin/boardhood/master/resources/screenshots/screenshots.jpg" alt="Screenshot #1"/>
