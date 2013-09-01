@@ -1,0 +1,147 @@
+This file contains instructions for manually installing the software stack plus setting up git in the server for deployments during development.
+
+# Install PostgreSQL 9.0 and PostGIS
+====================================
+user: postgres
+passw: postgres
+
+1. Install all necessary packages
+---------------------------------
+sudo apt-get install postgresql-9.1 postgresql-client-9.1 postgresql-server-dev-9.1 postgresql-contrib-9.1 libpq5 libpq-dev postgis postgresql-9.1-postgis
+
+
+2. Change 'postgres' UNIX password and database password
+--------------------------------------------------------
+# passwd postgres
+Changing password for user postgres.
+New UNIX password:
+Retype new UNIX password:
+passwd: all authentication tokens updated successfully.
+
+# su postgres
+# psql
+alter user postgres with password ‘new_password’;
+\q
+
+
+
+# Install PostgreSQL Python Driver: Psycopg2
+============================================
+
+$ sudo apt-get install build-essential
+$ sudo apt-get install python-dev python-setuptools
+$ sudo easy_install psycopg2
+
+
+
+# Install Memcached
+===================
+
+$ sudo apt-get install memcached
+
+
+
+# NGINX INSTALLATION AND CONFIGURATION
+======================================
+user: www-data
+
+
+
+# SETUP REMOTE GIT REPOSITORY
+# http://danbarber.me/using-git-for-deployment/
+===============================================
+
+1. Create the project - can't be empty
+-------------------------------------
+$ cd /var/www/myproject
+$ git init
+Initialized empty Git repository in /var/www/myproject
+$ touch README
+$ git add .
+$ git commit
+
+
+2. Create the bare repository
+----------------------------
+$ mkdir -p /var/git/myproject.git
+$ cd /var/git/myproject.git
+$ git init --bare
+$ cd /var/www/myproject
+$ git push /var/git/myproject.git master
+Counting objects: 143, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (87/87), done.
+Writing objects: 100% (143/143), 288.28 KiB, done.
+Total 143 (delta 52), reused 129 (delta 47)
+To /var/git/myproject.git
+* [new branch]      master -> master
+
+
+3. Add the bare repository as a remote of the live repo
+------------------------------------------------------
+$ vim /var/www/myproject/.git/config
+
+    [remote "hub"]
+        url = /var/git/myproject.git
+        fetch = +refs/heads/*:refs/remotes/hub/*
+     
+   
+4. Add the hook that will pull everything pushed to the hub repo
+   It can contain other commands, like configuration files to 
+   make the live repo works.
+----------------------------------------------------------------
+$ touch /var/git/myproject.git/hooks/post-update
+
+    #!/bin/sh
+
+    echo
+    echo "**** Pulling changes into Live [Hub's post-update hook]"
+    echo
+
+    cd /var/www/myproject || exit
+    unset GIT_DIR
+    git pull hub master
+    
+    #any other needed commands
+
+    exec git-update-server-info
+
+$ chmod +x /var/git/myproject.git/hooks/post-update
+
+
+5. Add a hook to the live repo, so that any changes in it
+   will be pushed to the hub repo. Anyway, the recommendation
+   is to only make changes at the dev repo and then push to the server
+----------------------------------------------------------------------
+$ vim /var/www/myproject/.git/hooks/post-commit
+
+    #!/bin/sh
+
+    echo
+    echo "**** pushing changes to Hub [Live's post-commit hook]"
+    echo
+
+    git push hub
+
+$ chmod +x /var/www/myproject/.git/hooks/post-commit
+
+
+6. Generate public key, upload to server and add to authorized keys
+-------------------------------------------------------------------
+$ ssh-keygen
+$ scp -i boardhoodkey.pem /home/maycon/.ssh/id_rsa.pub ubuntu@127.0.0.1:~/.ssh/id_rsa.pub
+ubuntu@127.0.0.1:$ cat ~/.ssh/id_rsa.pub >> ~/.ssh/authorized_keys
+
+
+7. Clone the repo locally and push changes
+------------------------------------------
+$ cd ~/Sites
+$ git clone dan@server:/var/git/myproject.git myproject
+$ git push origin master
+
+
+# SETUP PYTHON ENVIRONMENT
+==========================
+
+-- under virtualenv
+pip install --no-index -f http://dist.plone.org/thirdparty/ -U PIL

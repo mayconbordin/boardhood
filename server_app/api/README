@@ -1,29 +1,7 @@
-Application
-===========
+### API ###
 
-Testado com python 2.6
+Under the ´boardhood´ folder is the application code, and in the ´db´ folder is the database schema plus a sample data script.
 
-Instalar dependências:
+´requirements.txt´ lists all the dependencies of the application.
 
-pip install -r requirements.txt
-
-
-pip install --no-index -f http://dist.plone.org/thirdparty/ -U PIL
-
-
-Packages
-========
-
-python-dev
-python-setuptools
-memcached
-
-libpq-dev
-libpq5
-postgresql-8.4
-postgresql-8.4-postgis
-postgresql-client-8.4
-postgresql-client-common
-postgresql-common
-postgresql-contrib-8.4
-postgis
+´manage.py´ is a facility for listing keys in the memcached, managing the databases and running tests.

@@ -22,3 +22,9 @@ Basically, it is a mobile application for people to discuss about topics of inte
 ## Client Screenshots ##
 
 <img src="https://raw.github.com/mayconbordin/boardhood/master/resources/screenshots/screenshots.jpg" alt="Screenshot #1"/>
+
+## License ##
+
+Copyright (c) 2012 Maycon Bordin
+
+Licensed under the MIT License (MIT)
