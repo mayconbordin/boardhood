@@ -11,8 +11,8 @@ import sys
 sys.path.append('../..')
 from boardhood.helpers import S3
 
-AWS_ACCESS_KEY_ID = 'AKIAIHWEN3SLR5VBLN2Q'
-AWS_SECRET_ACCESS_KEY = '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'
+AWS_ACCESS_KEY_ID = 'AWS_ACCESS_KEY_ID'
+AWS_SECRET_ACCESS_KEY = 'AWS_SECRET_ACCESS_KEY'
 BUCKET_NAME = 'boardhood_profile_images'
 
 def update_s3():
