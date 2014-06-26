@@ -4,6 +4,7 @@ BoardHood is an application developed as a final year project (FYP) in Informati
 
 Basically, it is a mobile application for people to discuss about topics of interest. More basically yet, it's a forum, but you can choose to follow only those topics that you are interested in.
 
+The client has been developed in Android and published in the [Google Play](https://play.google.com/store/apps/details?id=com.boardhood.mobile&hl=en) marketplace.
 
 ## Technology ##
 
